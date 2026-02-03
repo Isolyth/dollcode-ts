@@ -1,0 +1,48 @@
+{
+  "name": "dollcode",
+  "version": "1.0.0",
+  "description": "A base-3 text encoder/decoder using Unicode block characters",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "dollcode",
+    "encoder",
+    "decoder",
+    "base3",
+    "trinary",
+    "unicode",
+    "text-encoding"
+  ],
+  "author": "eriskii",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isolyth/dollcode-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isolyth/dollcode-ts/issues"
+  },
+  "homepage": "https://github.com/isolyth/dollcode-ts#readme",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
