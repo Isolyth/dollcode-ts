@@ -5,7 +5,7 @@ A TypeScript implementation of the text-compatible dollcode encoding system, rev
 ## Installation
 
 ```bash
-npm install dollcode
+npm install github:isolyth/dollcode-ts
 ```
 
 ## Usage
